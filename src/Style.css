@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+h1,h2,h3,h4,h5,h6{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Move arrows outside the slider */
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+   color: #cbc9c9  !important;/* Tailwind red-600 */
+  width: 40px ;
+  height: 40px ;
+  transform: translateY(-50%);
+  border-radius: 9999px; /* full circle */
+  color: white;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* hidden by default */
+  z-index: 10;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px !important; /* Resize arrow icon */
+  font-weight: bold;
+}
+
+/* Show arrows only on hover */
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+/* Make arrow icons larger */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+}

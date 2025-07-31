@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "animate.css": "^4.1.1",
     "antd": "^5.26.6",
+    "lucide-react": "^0.534.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.61.1",
     "react-router-dom": "^7.7.1",
+    "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
