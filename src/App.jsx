@@ -5,10 +5,11 @@ import PrivateRoute from './components/PrivateRoute';
 import Login from "./Pages/Login"
 import HomePage from './Pages/HomePage';
 import AdminDashboard  from './Pages/admin/Dashboard';
-import  ProductList  from './Pages/admin/ProductList';
+import  ProductCards  from "./components/ProductCards"
 import EditProduct from './Pages/admin/EditProduct';
 import AddProduct from './Pages/admin/AddProduct';
 import ProductDetails from './Pages/ProductDetails';
+import  ProductsList  from './Pages/admin/ProductsList';
 function App() {
 
 
@@ -21,11 +22,12 @@ function App() {
 
              {/* private routes */}
              <Route path="/private" element={<PrivateRoute />}/>
-             <Route path="admin" element={<AdminDashboard />} />
-          <Route path="/admin/products" element={<ProductList />} />
+             <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/productcards" element={<ProductCards />} />
            <Route path="/admin/products/add" element={<AddProduct/>} />
           <Route path="/admin/products/edit/:id" element={<EditProduct />} />
             <Route path="/product/:id" element={<ProductDetails />} />
+               <Route path="/admin/products" element={<ProductsList />} />
          </Routes>
       </BrowserRouter>
     </>

@@ -2,14 +2,13 @@ import React,{useState} from 'react';
 import { ArrowRight ,ChevronRight, } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import ProductList from './admin/ProductList';
+import ProductCards from "../components/ProductCards"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Navbar from './Navbar';
 
 const HomePage = () => {
-   const [upcomingMatches] = useState([1, 2, 3, 5, 6, 8, 9]);
    const slides = [
     {
       img: "https://wallpapercat.com/w/full/8/6/f/1326831-3840x2160-desktop-4k-gadget-wallpaper-photo.jpg",
@@ -58,7 +57,6 @@ const HomePage = () => {
 </div>
 
 
-        {/* Right Side Image with Text Overlay */}
      
             <div className="relative lg:w-3/4  pr-2 pl-12">
       <Swiper
@@ -82,7 +80,7 @@ const HomePage = () => {
                 alt="Slide Image"
                 className="w-full h-auto shadow-lg max-h-[350px] object-cover"
               />
-              {/* Overlay Text & Button */}
+          
    <div className="absolute inset-0 flex flex-col items-start justify-center pl-10 space-y-4 ">
            <h2 className="text-white text-3xl font-extrabold leading-snug">
                   {slide.offer.split(" ")[0]}{" "}
@@ -103,15 +101,15 @@ const HomePage = () => {
       </div>
       </main>
 
-      {/* This is now below the main section */}
+      
       <div className="text-1xl  text-start bg-gray-100 py-6 ">
           <h1 className='font-bold text-red-700 leading-tight py-3 ml-14'> Today's </h1> 
            <h1 className='font-bold leading-tight  ml-14 text-3xl text-black-700 text-start
-            bg-gray-100 py-3'>Flash Sales</h1>
+            bg-gray-100 py-3'>Best Selling Products</h1>
       </div>
 
     
-      <ProductList/>
+      <ProductCards/>
   
   
 
