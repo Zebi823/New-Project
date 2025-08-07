@@ -13,12 +13,12 @@ const Dashboard = () => {
 
   return (
     <div className="flex h-screen bg-gray-50 w-full">
-      {/* Sidebar */}
+    
       <Sidebar />
 
-      {/* Main Dashboard Content */}
+      
       <div className="flex-1 min-h-screen bg-gray-100 p-6 overflow-y-auto">
-        {/* Header */}
+        
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-3xl font-bold text-red-700">Admin Dashboard</h1>
           <button
@@ -30,7 +30,7 @@ const Dashboard = () => {
           </button>
         </div>
 
-        {/* Stats Cards */}
+        
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
           <div className="bg-white rounded-lg shadow p-6">
             <div className="flex items-center justify-between">

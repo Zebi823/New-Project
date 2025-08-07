@@ -22,8 +22,8 @@ const Sidebar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.clear(); // Clear login/session data
-    navigate("/login"); // Redirect to login page
+    localStorage.clear(); 
+    navigate("/login"); 
   };
 
   const menuItems = [

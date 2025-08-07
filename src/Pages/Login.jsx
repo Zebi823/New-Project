@@ -23,7 +23,7 @@ const Login = () => {
 
   const onSubmit = async (info) => {
     try {
-      // Simulated backend login check
+      
       const adminEmail = "admin@example.com";
       const adminPassword = "admin999";
 
@@ -48,16 +48,16 @@ const Login = () => {
 
   return (
     <>
-      {/* Header */}
+      
       <div className="w-full border-b border-gray-200 py-3 bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-red-700 ml-10">Exclusive</div>
         </div>
       </div>
 
-      {/* Main */}
+      
       <main className="flex py-6 min-h-screen bg-white">
-        {/* Image Section */}
+        
         <section className="hidden lg:flex w-3/5 h-screen justify-center items-center">
           <img
             src="https://png.pngtree.com/thumb_back/fw800/background/20240419/pngtree-smart-phone-with-online-shop-concept-on-screen-all-screen-content-image_15663344.jpg"
@@ -66,7 +66,7 @@ const Login = () => {
           />
         </section>
 
-        {/* Form Section */}
+        
         <div className="w-full lg:w-2/5 flex flex-col justify-center items-center px-6">
           <section className="animate__animated animate__slideInRight animate__faster">
             <div className="w-full max-w-md space-y-4 bg-gray-100 p-10 mb-14 rounded-2xl">
@@ -82,7 +82,7 @@ const Login = () => {
               )}
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                {/* Email Field */}
+              
                 <input
                   type="email"
                   placeholder="Enter your e-mail"
@@ -97,7 +97,7 @@ const Login = () => {
                 />
                 {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
 
-                {/* Password Field */}
+                
                 <div className="relative">
                   <input
                     type={type}
@@ -122,7 +122,7 @@ const Login = () => {
                   )}
                 </div>
 
-                {/* Submit & Forgot Password */}
+                
                 <div className="flex justify-between items-center">
                   <button
                     type="submit"
@@ -135,7 +135,7 @@ const Login = () => {
                   </Link>
                 </div>
 
-                {/* Signup Link */}
+              
                 <p className="text-sm text-center mt-6">
                   Don't have an account?{" "}
                   <Link to="/PartnerSignup" className="text-red-700 hover:underline font-medium">
